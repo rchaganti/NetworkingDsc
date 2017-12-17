@@ -1,0 +1,8 @@
+[ClassVersion("1.0.0.0"), FriendlyName("NetworkAdapterProperty")]
+class NetworkAdapterProperty : OMI_BaseResource
+{
+    [Key] String DisplayName;
+    [Required] String Name;
+    [Required] String DisplayValue;  
+    [Write, ValueMap{"Present","Absent"}, Values{"Present","Absent"}] String Ensure;  
+};
