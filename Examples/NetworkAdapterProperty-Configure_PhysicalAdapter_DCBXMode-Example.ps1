@@ -3,7 +3,7 @@ Configuration PhysicalAdapterVLAN
     Import-DscResource -ModuleName PSDesiredStateConfiguration -ModuleVersion 1.1
     Import-DscResource -ModuleName NetworkingDsc -ModuleVersion 1.0.0.0
 
-    NetworkAdapterProperty VLAN
+    NetworkAdapterProperty S1P1DCBX
     {
         Id = 'S1P1DCBX'
         Name = 'SLOT 1 PORT 1'
@@ -12,7 +12,7 @@ Configuration PhysicalAdapterVLAN
         Ensure = 'Present'
     }
 
-    NetworkAdapterProperty VLAN
+    NetworkAdapterProperty S1P2DCBX
     {
         Id = 'S2P2DCBX'
         Name = 'SLOT 1 PORT 2'
