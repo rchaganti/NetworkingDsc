@@ -27,6 +27,9 @@ Short description
 .DESCRIPTION
 Long description
 
+.PARAMETER Id
+Parameter description
+
 .PARAMETER Name
 Parameter description
 
@@ -50,6 +53,10 @@ function Get-TargetResource
 	(
         [Parameter(Mandatory = $true)]
 		[String]
+        $Id,
+
+        [Parameter(Mandatory = $true)]
+		[String]
         $Name,
         
         [Parameter(Mandatory = $true)]
@@ -62,6 +69,7 @@ function Get-TargetResource
 	)
 
     $configuration = @{
+        Id = $Id
         Name = $Name
         DisplayName = $DisplayName
         DisplayValue = $DisplayValue
@@ -86,6 +94,9 @@ Short description
 .DESCRIPTION
 Long description
 
+.PARAMETER Id
+Parameter description
+
 .PARAMETER Name
 Parameter description
 
@@ -109,6 +120,10 @@ function Set-TargetResource
 	[CmdletBinding()]
 	param
 	(
+        [Parameter(Mandatory = $true)]
+		[String]
+        $Id,
+
         [Parameter(Mandatory = $true)]
 		[String]
         $Name,
@@ -160,6 +175,9 @@ Short description
 .DESCRIPTION
 Long description
 
+.PARAMETER Id
+Parameter description
+
 .PARAMETER Name
 Parameter description
 
@@ -184,6 +202,10 @@ function Test-TargetResource
 	[OutputType([System.Boolean])]
 	param
 	(
+        [Parameter(Mandatory = $true)]
+		[String]
+        $Id,
+
         [Parameter(Mandatory = $true)]
 		[String]
         $Name,

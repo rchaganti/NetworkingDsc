@@ -5,6 +5,7 @@ Configuration PhysicalAdapterVLAN
 
     NetworkAdapterProperty VLAN
     {
+        Id = 'S1P1DCBX'
         Name = 'SLOT 1 PORT 1'
         DisplayName =  'DcbxMode'
         DisplayValue = 'Host in charge'
@@ -13,6 +14,7 @@ Configuration PhysicalAdapterVLAN
 
     NetworkAdapterProperty VLAN
     {
+        Id = 'S2P2DCBX'
         Name = 'SLOT 1 PORT 2'
         DisplayName =  'DcbxMode'
         DisplayValue = 'Host in charge'

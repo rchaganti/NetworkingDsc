@@ -5,6 +5,7 @@ Configuration PhysicalAdapterVLAN
 
     NetworkAdapterProperty VLAN
     {
+        Id = 'S1P1VLAN'
         Name = 'SLOT 1 PORT 1'
         DisplayName =  'VLAN ID'
         DisplayValue = '102'
